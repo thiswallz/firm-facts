@@ -25,13 +25,13 @@ const FirmFacts = () => {
         </FirmFactCard>
 
         <FirmFactCard variant="border">
-          <Button variant="icon" icon={<SearchIcon />}>
-            This is a two line button that terminates with more text and an icon
-          </Button>
+          <Button>This is a one line button</Button>
         </FirmFactCard>
 
         <FirmFactCard variant="border">
-          <Button>This is a one line button</Button>
+          <Button variant="icon" icon={<SearchIcon />}>
+            This is a two line button that terminates with more text and an icon
+          </Button>
         </FirmFactCard>
 
         <FirmFactCard variant="border">

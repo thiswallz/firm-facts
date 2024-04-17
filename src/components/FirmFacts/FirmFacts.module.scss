@@ -22,7 +22,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: $spacing-sm;
   margin-top: 51px;
-  height: 662px;
+  grid-auto-rows: 364px;
 
   > :first-child {
     grid-row: span 3;
@@ -48,6 +48,7 @@
 
 .description {
   color: $primary-color;
+  @include font($font-weight-normal, $font-style-normal, 16px, 24px, -0.5px);
 }
 
 .closeIcon {
@@ -60,5 +61,3 @@
   height: 44px;
   padding: 0;
 }
-
-
