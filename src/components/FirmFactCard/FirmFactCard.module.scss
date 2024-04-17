@@ -40,7 +40,7 @@ $transition-time: 0.2s;
     box-shadow: inset 0px 0px 0px $spacing-md $secondary-color;
 
     @media screen and (min-width: $breakpoint-lg) {
-      box-shadow: inset 0px 0px 0px $spacing-lg $secondary-color;
+      box-shadow: inset 0px 0px 0px 15px $secondary-color;
     }
   }
 }
