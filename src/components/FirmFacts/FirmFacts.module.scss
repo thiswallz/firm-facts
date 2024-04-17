@@ -22,7 +22,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: $spacing-sm;
   margin-top: 51px;
-  grid-auto-rows: 364px;
+  grid-auto-rows: 322px;
 
   > :first-child {
     grid-row: span 3;
