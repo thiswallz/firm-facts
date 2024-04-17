@@ -23,8 +23,9 @@ $transition-time: 0.2s;
   }
 
   @media screen and (min-width: $breakpoint-lg) {
-    box-shadow: inset 0px 0px 0px $spacing-xl transparent;
-    padding: $spacing-xl;
+    box-shadow: inset 0px 0px 0px 15px transparent;
+    padding-right: 29px;
+    padding-left: 25px;
   }
 }
 

@@ -11,6 +11,7 @@ const FirmFacts = () => {
     <section className={styles.main}>
       <img src={Close} alt="Close" className={styles.closeIcon} />
       <h1 className={styles.title}>Firm Facts</h1>
+      <hr className={styles.separator} />
       <ul className={styles.cardContainer}>
         <FirmFactCard variant="border">
           <Button variant="icon" icon={<SearchIcon />}>
