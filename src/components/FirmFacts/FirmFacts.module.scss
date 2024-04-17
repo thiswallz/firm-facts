@@ -1,0 +1,64 @@
+@import "~/styles/base";
+
+.main {
+  background-color: $primary-color;
+  width: 100%;
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 85px;
+  position: relative;
+}
+
+.title {
+  @include font($font-weight-normal, $font-style-normal, 60px, 66px);
+  color: $white;
+  margin-top: 42px;
+  border-bottom: 1px solid rgba($white, 20%);
+  padding-bottom: $spacing-lg;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-sm;
+  margin-top: 51px;
+  height: 662px;
+
+  > :first-child {
+    grid-row: span 3;
+  }
+
+  > :nth-last-child(-n + 3) {
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+    padding-top: $spacing-xxl;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: $spacing-lg;
+
+    > :first-child {
+      grid-row: span 2;
+    }
+  }
+}
+
+.description {
+  color: $primary-color;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 50px;
+  right: 63px;
+  padding: $spacing-md;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+}
+
+

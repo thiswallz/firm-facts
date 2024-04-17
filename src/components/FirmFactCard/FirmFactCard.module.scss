@@ -1,0 +1,37 @@
+@import "~/styles/base";
+
+$transition-time: 0.2s;
+
+.card {
+  background-color: $white;
+  width: 100%;
+  height: 100%;
+  transition: box-shadow $transition-time linear,
+    background-color $transition-time linear;
+  box-shadow: inset 0px 0px 0px $spacing-sm transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing-md;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    box-shadow: inset 0px 0px 0px $spacing-xl transparent;
+    padding: $spacing-xl;
+  }
+}
+
+.default {
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+.border {
+  &:hover {
+    box-shadow: inset 0px 0px 0px $spacing-md $secondary-color;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      box-shadow: inset 0px 0px 0px $spacing-lg $secondary-color;
+    }
+  }
+}
