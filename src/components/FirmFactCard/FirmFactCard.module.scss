@@ -16,7 +16,7 @@ $transition-time: 0.2s;
 
   &:hover {
     :global {
-      .hoverableBackground {
+      .hoverBackground:not(:disabled) {
         background-color: $secondary-color;
       }
     }

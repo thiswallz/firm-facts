@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({
   ...restProps
 }) => {
   return (
-    <button className={`hoverableBackground ${styles.button} ${styles[variant]}`} type="button" {...restProps}>
+    <button className={`hoverBackground ${styles.button} ${styles[variant]}`} type="button" {...restProps}>
       {icon}
       <span className={styles.text}>{children}</span>
     </button>
