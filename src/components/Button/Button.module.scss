@@ -39,7 +39,7 @@ $transition-time: 0.2s;
   @media screen and (min-width: $breakpoint-lg) {
     height: 70px;
     border-radius: 70px;
-    padding: $spacing-md $spacing-lg;
+    padding: $spacing-md 19px;
   }
 }
 
@@ -47,6 +47,7 @@ $transition-time: 0.2s;
   display: flex;
   align-items: center;
   gap: 16px;
+  padding-left: 27px;
 
   .text {
     text-align: left;
