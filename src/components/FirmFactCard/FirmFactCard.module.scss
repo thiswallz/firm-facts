@@ -14,6 +14,14 @@ $transition-time: 0.2s;
   align-items: center;
   padding: $spacing-md;
 
+  &:hover {
+    :global {
+      .hoverableBackground {
+        background-color: $secondary-color;
+      }
+    }
+  }
+
   @media screen and (min-width: $breakpoint-lg) {
     box-shadow: inset 0px 0px 0px $spacing-xl transparent;
     padding: $spacing-xl;
