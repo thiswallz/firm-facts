@@ -1,3 +1,4 @@
+import React from "react";
 import { CSSProperties } from "react";
 import styles from "./FirmFactCard.module.scss";
 
@@ -7,7 +8,7 @@ interface FirmFactCardProps {
   sx?: CSSProperties;
 }
 
-const FirmFactCard: React.FC<FirmFactCardProps> = ({
+const FirmFactCard: React.FC<FirmFactCardProps> = React.memo(({
   children,
   variant = "default",
   sx = {},
@@ -22,6 +23,6 @@ const FirmFactCard: React.FC<FirmFactCardProps> = ({
       {children}
     </article>
   );
-};
+});
 
 export default FirmFactCard;

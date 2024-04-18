@@ -12,7 +12,6 @@ $transition-time: 0.2s;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: $spacing-md;
 
   &:hover {
     :global {
@@ -25,8 +24,6 @@ $transition-time: 0.2s;
 
   @media screen and (min-width: $breakpoint-lg) {
     box-shadow: inset 0px 0px 0px 15px transparent;
-    padding-right: 29px;
-    padding-left: 25px;
   }
 }
 

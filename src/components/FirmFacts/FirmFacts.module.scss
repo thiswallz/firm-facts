@@ -34,14 +34,6 @@
     grid-row: span 3;
   }
 
-  > :nth-last-child(-n + 3) {
-    justify-content: start;
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-lg;
-    padding-top: 50px;
-  }
-
   @media screen and (min-width: $breakpoint-xl) {
     grid-template-columns: repeat(4, 1fr);
     gap: $spacing-lg;
@@ -54,6 +46,8 @@
 
 .description {
   color: $primary-color;
+  padding-right: $spacing-sm;
+
   @include font($font-weight-normal, $font-style-normal, 16px, 24px, -0.5px);
 }
 
