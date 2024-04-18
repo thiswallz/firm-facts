@@ -15,9 +15,13 @@ const Button: React.FC<ButtonProps> = ({
   ...restProps
 }) => {
   return (
-    <button className={`hoverBackground ${styles.button} ${styles[variant]}`} type="button" {...restProps}>
-      {icon}
-      <span className={styles.text}>{children}</span>
+    <button
+      className={`hoverGroup ${styles.button} ${styles[variant]}`}
+      type="button"
+      {...restProps}
+    >
+      <i className={styles.iconWrapper}>{icon}</i>
+      <span className={styles.label}>{children}</span>
     </button>
   );
 };

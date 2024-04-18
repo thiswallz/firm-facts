@@ -2,7 +2,7 @@
 
 $transition-time: 0.2s;
 
-.text {
+.label {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -22,11 +22,11 @@ $transition-time: 0.2s;
   height: 50px;
   border-radius: 70px;
   border: none;
-  padding: $spacing-sm $spacing-lg;
   background-color: $primary-color;
   color: $white;
-  transition: background-color $transition-time linear;
-  border: 1px solid $white;
+  transition: background-color $transition-time linear,
+    box-shadow $transition-time linear;
+  box-shadow: 0px 0px 0px 0px transparent;
 
   &:disabled {
     background-color: $light-color;
@@ -39,17 +39,21 @@ $transition-time: 0.2s;
 
   @media screen and (min-width: $breakpoint-lg) {
     height: 70px;
-    padding: $spacing-md 19px;
   }
 }
 
 .icon {
   display: flex;
-  align-items: center;
   gap: 16px;
   padding-left: 27px;
+  padding-right: 19px;
 
-  .text {
+  .label {
     text-align: left;
+    margin: 11px 0;
+  }
+
+  .iconWrapper {
+    margin-top: 26px;
   }
 }

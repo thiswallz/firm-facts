@@ -13,13 +13,16 @@ const FirmFacts = () => {
       <h1 className={styles.title}>Firm Facts</h1>
       <hr className={styles.separator} />
       <ul className={styles.cardContainer}>
-        <FirmFactCard variant="border">
+        <FirmFactCard
+          variant="border"
+          sx={{ paddingLeft: "23px", paddingRight: "31px" }}
+        >
           <Button variant="icon" icon={<SearchIcon />}>
             This is a two line button that terminates with more text and an icon
           </Button>
         </FirmFactCard>
 
-        <FirmFactCard>
+        <FirmFactCard sx={{ padding: "0 27px" }}>
           <Button variant="icon" icon={<SearchIcon />}>
             This is a two line button that terminates with more text and an icon
           </Button>
@@ -35,7 +38,10 @@ const FirmFacts = () => {
           </Button>
         </FirmFactCard>
 
-        <FirmFactCard variant="border">
+        <FirmFactCard
+          variant="border"
+          sx={{ paddingLeft: "27px", paddingRight: "27px" }}
+        >
           <Button variant="icon" icon={<SearchIcon />}>
             This is a two line button that terminates with more text and an icon
           </Button>

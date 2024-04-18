@@ -16,8 +16,9 @@ $transition-time: 0.2s;
 
   &:hover {
     :global {
-      .hoverBackground:not(:disabled) {
+      .hoverGroup:not(:disabled) {
         background-color: $secondary-color;
+        box-shadow: 0px 0px 0px 2px $white;
       }
     }
   }
